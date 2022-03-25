@@ -6,19 +6,19 @@
   color: #2c3e50;
   margin-top: 60px;
 }
-html, 
-body, 
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box; 
+html,
+body,
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-align: center;
 }
-body{
-    background-color: peachpuff;
+body {
+  background-color: #edf3c8;
 }
-.title{
-    text-align: center;
-    color: skyblue;
-    font-size: 75px;
+.title {
+  text-align: center;
+  color: skyblue;
+  font-size: 75px;
 }
-
