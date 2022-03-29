@@ -12,6 +12,7 @@ body,
     padding: 0%;
     margin: 0%;
     box-sizing: border-box; 
+    text-align: center;
 }
 body{
     background-color: peachpuff;
@@ -32,6 +33,7 @@ body{
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    position: relative;
   }
   
   #btn {
