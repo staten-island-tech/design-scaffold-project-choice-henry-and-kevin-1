@@ -5,6 +5,7 @@ let Attractions = [
       "https://images.unsplash.com/photo-1524562865630-b991c6c2f261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3lkbmV5JTIwaGFyYm91ciUyMGJyaWRnZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     subtitle: "Sydney Harbor Bridge",
     text: "One of Sydneys most noticiable icons, it was built in 1932 and is the worlds largest steel arch bridge. Scaling the bridge is one of Australia's top outdoor adventures, and you can choose from a range of different tours. Sydney BridgeClimb takes groups on an approximately 3.5-hour climb to the top of the outer arch. Tours run throughout the day, beginning with a dawn climb and ending with a night climb. You can also choose from different types of climbs, including an Indigenous storytelling experience and a climb right across the arch to the other side – the bridge connects the harbor's north and south shores.",
+    id: 1,
   },
   {
     name: "Sydney Opera House",
@@ -12,6 +13,7 @@ let Attractions = [
       "https://images.unsplash.com/photo-1526958977630-bc61b30a2009?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHN5ZG5leSUyMG9wZXJhJTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     subtitle: "2.Sydney Opera House",
     text: "One of the world's great icons, the Sydney Opera House is a UNESCO World Heritage Site and the star attraction on the glittering harbor. This graceful building, shaped like shells or billowing sails, perches on a finger of land surrounded by water.",
+    id: 2,
   },
   {
     name: "Queen Victoria Building",
@@ -19,6 +21,7 @@ let Attractions = [
       "https://images.unsplash.com/photo-1565016106133-d5f7db11fdb5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cXVlZW4lMjB2aWN0b3JpYSUyMGJ1aWxkaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     subtitle: "3. Queen Victoria Building",
     text: "Opened in 1898, initially as the Sydney Produce Market, Queen Victoria Building, or QVB, as locals know it, is a shopping and dining destination located three blocks west of Hyde Park, taking up an entire block in Sydney’s CBD, or Central Business District. One of the most famous landmarks in Sydney, QVB is home to around 190 retail outlets. Browse iconic Australian brands, including Lorna Jane for activewear, R.M. Williams for men’s, women’s, and children’s apparel, and Hunter’s for gorgeous cashmere. Pick up some confectionery from Australia’s oldest family-owned chocolate makers, Haigh’s Chocolates, and invest in artwork at Aboriginal Art Galleries, which offers fully-insured, free worldwide shipping.",
+    id: 3,
   },
   {
     name: "Sydney Tower Eye",
@@ -26,9 +29,10 @@ let Attractions = [
       "https://images.unsplash.com/photo-1539424865926-b103c06a6d6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c3lkbmV5JTIwdG93ZXIlMjBleWV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     subtitle: "4. Sydney Tower Eye",
     text: "An icon of the city’s skyline, the pin-like Sydney Tower Eye is one of the most famous Sydney landmarks and the city’s tallest building at 1,014 ft high. Take in a remarkable bird’s eye view from 880 feet up on a 60-minute Skywalk tour, one floor above the indoor Observation Deck. Views are said to stretch as far as the Blue Mountains range, 50 miles northwest of the city. Take binoculars to spot other Sydney landmarks, including Botany Bay to the south and Sydney Harbour to the north. Book a ticket that includes a dining experience at SkyFeast, Sydney Tower Eye’s 82nd story revolving restaurant. Designer stores, the Westfield Shopping Mall, and plenty of restaurants and bars can be found dotted around Sydney Tower Eye’s Market Street location.",
+    id: 4,
   },
 ];
-let food = [
+let foods = [
   {
     name: "Barramundi ",
     image:
