@@ -28,9 +28,8 @@ a {
   list-style: none;
  }
 .navbar {
-  display: inline-flexbox;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   background-color: teal;
   color: #fff;
@@ -43,7 +42,7 @@ a {
 }
  .menu {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
   font-size: 18px;
  }
  .menu li {
