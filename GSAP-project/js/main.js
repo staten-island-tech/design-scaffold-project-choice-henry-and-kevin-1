@@ -1,4 +1,6 @@
 import { attractions, foods, souvenirs } from "./array.js";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 for (let a in attractions) {
   let heading = document.createElement("h2");
@@ -53,3 +55,11 @@ for (let s in souvenirs) {
   document.body.appendChild(img);
   document.body.appendChild(text);
 }
+
+gsap.registerPlugin(ScrollTrigger);
+const tl = gsap.timeline({ scrollTrigger: ".heading", delay: 1.0 });
+
+tl.from(".heading", { opacity: 0, duration: 0.3 });
+tl.from(".header", { opacity: 0, duration: 0.2 });
+tl.from(".img", { opacity: 0, duration: 0.3 });
+tl.from(".text", { opacity: 0, duration: 0.5 });
