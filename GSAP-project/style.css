@@ -8,13 +8,14 @@ body,
 }
 body {
   background-color: #e1e4d0;
-  background-image; 
+  background-image: ;
 }
 .header {
   text-align: center;
   color: skyblue;
   font-size: 70px;
   background-image: linear-gradient(rgb(17, 109, 230), rgb(224, 20, 20));
+  background-size: ;
 }
 .heading {
   color: rgb(29, 179, 206);
