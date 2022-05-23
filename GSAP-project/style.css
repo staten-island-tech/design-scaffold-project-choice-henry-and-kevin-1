@@ -99,27 +99,35 @@ h5 {
   box-shadow: 10px;
   margin-top: 30px;
 }
-@media (width: 1170px) and (height: 2532px) {
-  .img {
-    height: 30rem;
-    width: 30rem;
-  }
-}
-@media (width: 768px) and (height: 1024px) {
-  .img {
-    height: 30rem;
-    width: 20rem;
-  }
-}
-@media (width: 1920px) and (height: 1080px) {
-  .img {
-    height: 30rem;
-    width: 30rem;
-  }
-}
 @media (max-width: 1024px) {
 }
 @media (max-width: 768px) {
+  .img {
+    height: auto;
+    width: 20rem;
+  }
+  .text {
+    font-size: 15px;
+    border: solid black 2px;
+    border-width: 2px;
+    background-image: linear-gradient(rgb(195, 197, 78), rgb(43, 168, 218));
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 3rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+  }
+  .heading {
+    color: rgb(29, 179, 206);
+    font-size: 30px;
+    border: solid white 2px;
+    border-width: 5px;
+    border-color: black;
+    background-color: white;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+  }
 }
 @media (max-width: 600px) {
 }
