@@ -154,3 +154,24 @@ li a {
 li a:hover {
   background-color: #111;
 }
+
+.syd {
+  width: 50px;
+  height: 50px;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 20;
+}
+
+@keyframes example {
+  from {
+    transform: scaleX(1) scaleY(1);
+  }
+  to {
+    transform: scaleX(50) scaleY(2);
+  }
+}
+div {
+  width: 100px;
+  height: 100px;
+}
