@@ -42,10 +42,12 @@ for (let s in souvenirs) {
   let heading = document.createElement("h1");
   let img = document.createElement("img");
   let text = document.createElement("div");
+  let footer = document.createElement("footer");
 
   heading.className = "souvenirs, heading";
   img.className = "souvenirs, parent-3, img";
   text.className = "souvenirs, parent-3, text";
+  footer.className = "footer";
 
   heading.innerHTML = `${souvenirs[s].id}. ${souvenirs[s].name}`;
   img.src = souvenirs[s].image;
@@ -55,6 +57,11 @@ for (let s in souvenirs) {
   document.body.appendChild(img);
   document.body.appendChild(text);
 }
+
+document.body.insertAdjacentHTML(
+  "beforeend",
+  " <footer> <p>Author: Henry Lai and Kevin Zheng <br> <a href=henryl4@nycstudents.net>henryl4@nycstudents.net</a> </p> </footer>"
+);
 
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({ scrollTrigger: ".heading", delay: 1.0 });

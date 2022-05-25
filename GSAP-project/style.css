@@ -12,10 +12,12 @@ body {
 }
 .header {
   text-align: center;
-  color: skyblue;
+  position: absolute;
+  top: 70px;
+  left: 600px;
+  color: rgb(51, 184, 224);
   font-size: 70px;
-  background-image: linear-gradient(rgb(17, 109, 230), rgb(224, 20, 20));
-  background-size: ;
+  background-image: linear-gradient(rgb(202, 204, 62), rgb(20, 224, 129));
 }
 .heading {
   color: rgb(29, 179, 206);
@@ -67,6 +69,13 @@ h3,
 h4,
 h5 {
   text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 6rem;
+  background-image: linear-gradient(rgb(57, 137, 212), rgb(219, 73, 73));
+  color: white;
+  position: relative;
 }
 .attractions {
   display: grid;
@@ -134,7 +143,6 @@ h5 {
     background-image: linear-gradient(rgb(57, 137, 212), rgb(219, 73, 73));
     color: white;
     position: relative;
-    top: 500rem;
   }
 }
 @media (max-width: 768px) {
@@ -167,14 +175,7 @@ h5 {
 }
 @media (max-width: 600px) {
 }
-footer {
-  text-align: center;
-  padding: 6rem;
-  background-image: linear-gradient(rgb(57, 137, 212), rgb(219, 73, 73));
-  color: white;
-  position: relative;
-  top: 700rem;
-}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -198,24 +199,21 @@ li a {
 li a:hover {
   background-color: #111;
 }
-
 .syd {
-  width: 50px;
-  height: 50px;
+  width: 99vw;
+  height: auto;
   animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: 20;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  margin-left: 0px;
+  margin-top: 0px;
 }
 
 @keyframes example {
   from {
-    transform: scaleX(1) scaleY(1);
+    transform: scaleX(0.1) scaleY(0.1);
   }
   to {
-    transform: scaleX(50) scaleY(2);
+    transform: scaleX(1) scaleY(1);
   }
-}
-div {
-  width: 100px;
-  height: 100px;
 }
