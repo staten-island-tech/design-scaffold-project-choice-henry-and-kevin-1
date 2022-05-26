@@ -2,6 +2,11 @@ import { attractions, foods, souvenirs } from "./array.js";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+document.body.insertAdjacentHTML(
+  "beforeend",
+  " <h2 class='attractions'>Attractions</h2>"
+);
+
 for (let a in attractions) {
   let heading = document.createElement("h2");
   let img = document.createElement("img");
@@ -20,6 +25,8 @@ for (let a in attractions) {
   document.body.appendChild(text);
 }
 
+document.body.insertAdjacentHTML("beforeend", " <h2 class='foods'>Foods</h2>");
+
 for (let f in foods) {
   let heading = document.createElement("h1");
   let img = document.createElement("img");
@@ -37,6 +44,11 @@ for (let f in foods) {
   document.body.appendChild(img);
   document.body.appendChild(text);
 }
+
+document.body.insertAdjacentHTML(
+  "beforeend",
+  " <h2 class='souvenirs'>Souvenirs</h2>"
+);
 
 for (let s in souvenirs) {
   let heading = document.createElement("h1");
@@ -60,13 +72,27 @@ for (let s in souvenirs) {
 
 document.body.insertAdjacentHTML(
   "beforeend",
-  " <footer> <p>Author: Henry Lai and Kevin Zheng <br> <a href=henryl4@nycstudents.net>henryl4@nycstudents.net</a> </p> </footer>"
+  " <footer id='home'> <p>Author: Henry Lai and Kevin Zheng <br> <a href=henryl4@nycstudents.net>henryl4@nycstudents.net</a> </p> </footer>"
 );
 
 gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({ scrollTrigger: ".heading", delay: 1.0 });
 
-tl.from(".heading", { opacity: 0, duration: 0.3 });
-tl.from(".header", { opacity: 0, duration: 0.2 });
-tl.from(".img", { opacity: 0, duration: 0.3 });
-tl.from(".text", { opacity: 0, duration: 0.5 });
+tl.from(".heading", { opacity: 0, duration: 0.4 });
+tl.from(".img", { opacity: 0, duration: 0.55 });
+tl.from(".text", { opacity: 0, duration: 0.7 });
+
+gsap.to(".header", { duration: 4, x: 500, ease: "bounce" });
+
+const split = new Splitattractions(".attractions, foods, souvenirs");
+
+gsap.set(split.attractions, {
+  transformOrigin: "center center -100px",
+  backfaceVisibility: "hidden",
+});
+
+gsap.to(".attractions", 3, {
+  rotationX: "360",
+  stagger: 0.1,
+  repeat: -1,
+});

@@ -5,6 +5,7 @@ body,
   margin: 0%;
   box-sizing: border-box;
   text-align: center;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #e1e4d0;
@@ -14,7 +15,6 @@ body {
   text-align: center;
   position: absolute;
   top: 70px;
-  left: 600px;
   color: rgb(51, 184, 224);
   font-size: 70px;
   background-image: linear-gradient(rgb(202, 204, 62), rgb(20, 224, 129));
@@ -98,6 +98,7 @@ footer {
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 }
+
 .img {
   length: 420px;
   width: 507px;
@@ -108,6 +109,7 @@ footer {
   box-shadow: 10px;
   margin-top: 30px;
 }
+
 @media (max-width: 1024px) {
   .img {
     height: auto;
@@ -268,4 +270,13 @@ li a:hover {
   to {
     transform: scaleX(1) scaleY(1);
   }
+}
+.attractions,
+.foods,
+.souvenirs {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: -300px;
+  margin-top: 25px;
 }
