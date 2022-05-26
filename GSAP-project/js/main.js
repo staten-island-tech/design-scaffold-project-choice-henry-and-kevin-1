@@ -1,10 +1,15 @@
 import { attractions, foods, souvenirs } from "./array.js";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {
+  spline,
+  pointsInPath,
+  createCoordsTransformer,
+} from "https://cdn.skypack.dev/@georgedoescode/generative-utils@1.0.1";
 
 document.body.insertAdjacentHTML(
   "beforeend",
-  " <h2 class='attractions'>Attractions</h2>"
+  " <h2 id='attractions'>Attractions</h2>"
 );
 
 for (let a in attractions) {
@@ -25,7 +30,7 @@ for (let a in attractions) {
   document.body.appendChild(text);
 }
 
-document.body.insertAdjacentHTML("beforeend", " <h2 class='foods'>Foods</h2>");
+document.body.insertAdjacentHTML("beforeend", " <h2 id='foods'>Foods</h2>");
 
 for (let f in foods) {
   let heading = document.createElement("h1");
@@ -47,7 +52,7 @@ for (let f in foods) {
 
 document.body.insertAdjacentHTML(
   "beforeend",
-  " <h2 class='souvenirs'>Souvenirs</h2>"
+  " <h2 id='souvenirs'>Souvenirs</h2>"
 );
 
 for (let s in souvenirs) {
@@ -82,17 +87,18 @@ tl.from(".heading", { opacity: 0, duration: 0.4 });
 tl.from(".img", { opacity: 0, duration: 0.55 });
 tl.from(".text", { opacity: 0, duration: 0.7 });
 
-gsap.to(".header", { duration: 4, x: 500, ease: "bounce" });
+gsap.to(".header", { duration: 4, x: 555, ease: "bounce" });
 
-const split = new Splitattractions(".attractions, foods, souvenirs");
-
-gsap.set(split.attractions, {
-  transformOrigin: "center center -100px",
-  backfaceVisibility: "hidden",
+const img = document.querySelector(".img");
+const hover = gsap.to(img, {
+  scaleX: 1.12,
+  scaleY: 1.12,
+  scaleZ: 1.5,
+  rotate: 360,
+  duration: 3,
+  paused: true,
+  ease: "ease-in-out",
 });
 
-gsap.to(".attractions", 3, {
-  rotationX: "360",
-  stagger: 0.1,
-  repeat: -1,
-});
+img.addEventListener("mouseenter", () => hover.play());
+img.addEventListener("mouseleave", () => hover.reverse());
